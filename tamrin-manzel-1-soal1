@@ -1,0 +1,24 @@
+//Navid Zamzami--tamrin1--soal1
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	float length, width;
+    Scanner input = new Scanner(System.in);
+        System.out.println("Enter length: ");
+        length = input.nextFloat();
+        System.out.println("Enter width: ");
+        width = input.nextFloat();
+        if(length > width) {
+            System.out.printf("the area of rectangle is: " + "%f * %f = %f", length, width, (length * width));
+            System.out.printf("the perimeter of rectangle is: " + (length * 2) + (width * 2));
+        } else if(length == width){
+            System.out.printf("the area of square is: " + "%f * %f = %f", length, width, (length * width));
+            System.out.printf("   the perimeter of square is: " + (length * 2) + (width * 2));
+        } else
+            System.out.println("length cannot be smaller than width!");
+        }
+    }
